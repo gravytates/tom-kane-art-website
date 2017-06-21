@@ -23,9 +23,11 @@
 
     $(".image-container").hover(function() {
       $(this).find(".painting-center-title").fadeIn(300);
+      $(this).find("#magnifying-glass").fadeIn(300);
     },
     function() {
       $(this).find(".painting-center-title").fadeOut(300);
+      $(this).find("#magnifying-glass").fadeOut(300);
     });
 
 

@@ -117,3 +117,13 @@
   font-size: 2em;
   position: relative;
 }
+
+.mag-glass img {
+  position: absolute;
+  right: 4px;
+  top: 10px;
+  width: 50px;
+  height: auto;
+  z-index: 5;
+  display: none;
+}
