@@ -19,8 +19,11 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import url('https://fonts.googleapis.com/css?family=Raleway:200');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
 
 // Header
+
+
 .header {
   box-shadow: 0px 10px 50px -13px #777;
   display: flex;
@@ -45,6 +48,23 @@
   padding-top: 18%;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 200;
+  height: 100%;
+  background: #F5F5F5;
+}
+
+#body {
+  min-height: 80vh;
+  padding-bottom: 10vh;
+}
 
 // Navbar
 $color-background: #F5F5F5;
@@ -58,7 +78,7 @@ $button-width: 35px;
 
 .button_container {
   position: fixed;
-  top: 5%;
+  top: 3%;
   right: 2%;
   height: $button-height;
   width: $button-width;
@@ -147,7 +167,7 @@ $button-width: 35px;
     top: 50%;
     transform: translateY(-50%);
     font-size: 50px;
-    font-weight: 400;
+    // font-weight: 400;
     text-align: center;
   }
   ul {
@@ -206,23 +226,42 @@ $button-width: 35px;
   }
 }
 
-// Footer
-* {
-  margin: 0;
-  padding: 0;
+// HEADER
+
+.header {
+  height: 150px;
+  font-size: 5em;
+  text-align: center;
 }
 
-html,
-body {
-  font-family: 'Raleway', sans-serif;
-  height: 100%;
-  background: #F5F5F5;
+// OTHER JUMBO
+
+#small-jumbo #h2{
+  color: #42424a;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+
+  letter-spacing: 1.5px;
+  padding-bottom: 3vh;
+  margin-top: 0;
 }
 
-#body {
-  min-height: 80vh;
-  padding-bottom: 10vh;
+#small-jumbo a, #small-jumbo a:hover{
+  color: #42424a;
+  text-decoration: none;
 }
+
+#small-jumbo.jumbotron {
+  background-attachment: fixed;
+  position: fixed;
+  width: 100%;
+  background-size: cover;
+  height: 8vh;
+}
+
+// FOOTER
+
 
 .footer {
   position: relative;

@@ -14,17 +14,13 @@
       <%= render 'shared/navigation' %>
       <%= render 'shared/header' unless request.env['PATH_INFO'] == "/" %>
 
-      <% if request.env['PATH_INFO'] == '/' %>
-        <div id="yield">
-          <%= yield %>
-        </div>
-      <% else %>
-        <div class="yield-container">
+
+
           <div id="yield">
             <%= yield %>
           </div>
-        </div>
-      <% end %>
+
+
 
     </div>
     <%= render 'shared/footer' %>
